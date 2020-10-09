@@ -1,4 +1,4 @@
-# MunchHilliard
+# munchhilliard
 A website about restaurants in Hilliard
 
 ## Directions
