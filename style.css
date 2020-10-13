@@ -1,8 +1,11 @@
 /* style.css */
 
 body{
-  font-size: 2em;
-  padding: 2em;
+  background-color:#918b8a;
+  border-left:25px solid #d1625a;
+  border-right:25px solid #d1625a;
+  border-top: 15px solid #d1625a;
+  padding: 5px
 }
 h2{
   border-top:2px solid black;
