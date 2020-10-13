@@ -11,8 +11,12 @@ body{
 h2{
   border-top:2px solid black;
   padding-top: 15px;
+  margin-bottom: 1px;
 }
 h3{
   /* style for review stars */
   margin: 1px;
+}
+p{
+  margin-top: 1px;
 }
