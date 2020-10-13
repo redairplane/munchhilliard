@@ -4,9 +4,15 @@ body{
   background-color:#918b8a;
   border-left:25px solid #d1625a;
   border-right:25px solid #d1625a;
-  border-top: 15px solid #d1625a;
-  padding: 5px
+  border-top: 15px solid #ae5049;
+  padding: 10px;
+  margin: 0px;
 }
 h2{
   border-top:2px solid black;
+  padding-top: 15px;
+}
+h3{
+  /* style for review stars */
+  margin: 1px;
 }
