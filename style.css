@@ -1,22 +1,31 @@
 /* style.css */
 
 body{
-  background-color:#918b8a;
+  background-color:#d6b8b8;
   border-left:25px solid #d1625a;
   border-right:25px solid #d1625a;
   border-top: 15px solid #ae5049;
+  border-bottom: 15px solid #ae5049;
   padding: 10px;
   margin: 0px;
 }
+h1{
+  text-align:center;
+}
 h2{
+  text-align:center;
   border-top:2px solid black;
   padding-top: 15px;
   margin-bottom: 1px;
+  color: #142269;
 }
 h3{
   /* style for review stars */
+  text-align:center;
   margin: 1px;
+  color:#e8e84f
 }
 p{
   margin-top: 1px;
+  color: #ffffff;
 }
