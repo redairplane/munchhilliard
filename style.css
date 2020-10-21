@@ -1,11 +1,11 @@
 /* style.css */
 
 body{
-  background-color:#d6b8b8;
-  border-left:25px solid #d1625a;
-  border-right:25px solid #d1625a;
-  border-top: 15px solid #ae5049;
-  border-bottom: 15px solid #ae5049;
+  background-color:#0f609c;
+  border-left:25px solid #b2daf8;
+  border-right:25px solid #b2daf8;
+  border-top: 15px solid #083454;
+  border-bottom: 15px solid #083454;
   padding: 10px;
   margin: 0px;
 }
@@ -14,7 +14,7 @@ h1{
 }
 h2{
   text-align:center;
-  border-top:2px solid black;
+  border-top:2px solid white;
   padding-top: 15px;
   margin-bottom: 1px;
   color: #142269;
@@ -23,9 +23,9 @@ h3{
   /* style for review stars */
   text-align:center;
   margin: 1px;
-  color:#e8e84f
+  color:white
 }
 p{
   margin-top: 1px;
-  color: #ffffff;
+  color: white;
 }
