@@ -16,7 +16,7 @@ h1{
 h2{
   text-align:center;
   border-top:2px solid white;
-  padding-top: 15px;
+  padding: 15px;
   margin: 15px 0px 0px 0px;
   color: #aaaaff;
   font-family: Verdana, Geneva, sans-serif;
@@ -24,7 +24,7 @@ h2{
   border-radius: 50px 50px 0px 0px; /* rounded top corners */
 }
 
-}
+
 h3{
   /* style for review stars */
   text-align:center;
@@ -34,6 +34,7 @@ h3{
 }
 p{
   margin: 0px;
+  padding: 15px;
   color: white;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   background-color: rgba(0,0,0,0.5); /* black but 50% opacity */
