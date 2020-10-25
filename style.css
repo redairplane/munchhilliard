@@ -17,18 +17,25 @@ h2{
   text-align:center;
   border-top:2px solid white;
   padding-top: 15px;
-  margin-bottom: 1px;
-  color: #142269;
+  margin: 15px 0px 0px 0px;
+  color: #aaaaff;
   font-family: Verdana, Geneva, sans-serif;
+  background-color: rgba(0,0,0,0.5); /* black but 50% opacity */
+  border-radius: 50px 50px 0px 0px; /* rounded top corners */
+}
+
 }
 h3{
   /* style for review stars */
   text-align:center;
-  margin: 1px;
-  color:white
+  margin: 0px;
+  color:white;
+  background-color: rgba(0,0,0,0.5); /* black but 50% opacity */
 }
 p{
-  margin-top: 1px;
+  margin: 0px;
   color: white;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  background-color: rgba(0,0,0,0.5); /* black but 50% opacity */
+  border-radius: 0px 0px 50px 50px; /* rounded bottom corners */
 }
