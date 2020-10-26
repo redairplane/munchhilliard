@@ -3,7 +3,7 @@ import java.time.LocalDate;
 /**
   describe this class
 */
-public class Review
+public class FoodReview
 {
     // declare private instance vars
     private Restaurant restaurant;
@@ -24,7 +24,7 @@ public class Review
       @param
       @param
     */
-    public Review(Restaurant _restaurant, double _reviewScore, String _reviewTitle, String _reviewBody, User _user)
+    public FoodReview(Restaurant _restaurant, double _reviewScore, String _reviewTitle, String _reviewBody, User _user)
     {
         numUsefulLikes = 0; // defaults to 0
         numFunnyLikes = 0; // defaults to 0

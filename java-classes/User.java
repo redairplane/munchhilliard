@@ -7,7 +7,7 @@ public class User
 {
     // declare private instance vars
     private Restaurant favRestaurant;
-    private Review lastReview;
+    private FoodReview lastReview;
     private int reviewCount;
     private double reviewScoreTotal;
     // add more
@@ -31,14 +31,6 @@ public class User
     {
       // needs completed
       return 0.0;
-    }
-
-    /**
-      describe each method
-    */
-    public void addReview()
-    {
-      // needs completed
     }
 
     /**
