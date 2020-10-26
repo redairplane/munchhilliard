@@ -36,6 +36,15 @@ public class FoodReview
     // accessors and mutators here
 
     /**
+      returns the number of useful likes
+      @return int numOfUsefulLikes - the amount of times the review was marked as useful
+    */  
+    public getUsefulLikes()
+    {
+      return numUsefulLikes;
+    }
+  
+    /**
       returns the date that the review was posted
       @return LocalDate object timestamp which is the date that the review was posted
     */
