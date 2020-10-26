@@ -36,7 +36,25 @@ public class FoodReview
     }
 
     // accessors and mutators here
-
+  
+    /**
+      returns the number of useful likes on the review
+      @return numUsefulLikes which is hoe many useful likes on the review
+    */ 
+    public int getNumUsefulLikes()
+    {
+      return numUsefulLikes;
+    }
+  
+    /**
+      returns the number of funny likes
+      @return int numOfFunnyLikes - the amount of times the review was marked as funny
+    */  
+    public getFunnyLikes()
+    {
+      return numFunnyLikes;
+    }
+    
     /**
       retuns the number of cool likes
       @return number of cool likes
@@ -55,7 +73,6 @@ public class FoodReview
       return numDislikes;
     }
 
-
     /**
       returns the date that the review was posted
       @return LocalDate object timestamp which is the date that the review was posted
@@ -66,13 +83,5 @@ public class FoodReview
     }
 
   
-    /**
-      returns the number of useful likes on the review
-      @return numUsefulLikes which is hoe many useful likes on the review
-    */ 
-    public int getNumUsefulLikes()
-    {
-      return numUsefulLikes;
-    }
 
 }
