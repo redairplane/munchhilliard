@@ -36,9 +36,25 @@ public class FoodReview
     }
 
     // accessors and mutators here
-  public int getNumDislikes(){
-    return numDislikes;
-  }
+
+    /**
+      retuns the number of cool likes
+      @return number of cool likes
+    */
+    public int getNumCoolLikes()
+    {
+      return numCoolLikes; 
+    }
+
+    /**
+      retuns the number of dislikes
+      @return number of dislikes
+    */
+    public int getNumDislikes()
+    {
+      return numDislikes;
+    }
+
 
     /**
       returns the date that the review was posted
@@ -48,6 +64,7 @@ public class FoodReview
     {
       return timestamp;
     }
+
   
     /**
       returns the number of useful likes on the review
@@ -57,4 +74,5 @@ public class FoodReview
     {
       return numUsefulLikes;
     }
+
 }
