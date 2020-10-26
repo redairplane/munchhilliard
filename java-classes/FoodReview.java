@@ -48,4 +48,13 @@ public class FoodReview
     {
       return timestamp;
     }
+  
+    /**
+      returns the number of useful likes on the review
+      @return numUsefulLikes which is hoe many useful likes on the review
+    */ 
+    public int getNumUsefulLikes()
+    {
+      return numUsefulLikes;
+    }
 }
