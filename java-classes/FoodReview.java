@@ -36,12 +36,12 @@ public class FoodReview
     // accessors and mutators here
 
     /**
-      returns the number of useful likes
-      @return int numOfUsefulLikes - the amount of times the review was marked as useful
+      returns the number of funny likes
+      @return int numOfFunnyLikes - the amount of times the review was marked as funny
     */  
-    public getUsefulLikes()
+    public getFunnyLikes()
     {
-      return numUsefulLikes;
+      return numFunnyLikes;
     }
   
     /**
