@@ -17,7 +17,8 @@ public class User
     private String userName;
 
     private String name;
-
+    
+    private String birthday;
 
     /**
       describe this constructor
@@ -28,6 +29,7 @@ public class User
         reviewCount = 0;
         reviewScoreTotal = 0;
         name = "none";
+      birthday = "Unknown";
         totalLikes = 0;
     }
 
@@ -94,6 +96,10 @@ public class User
     public String getName()
     {
       return name;
+    }
+  
+    public void setBirthday(_birthday){
+      
     }
   
 
