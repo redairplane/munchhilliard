@@ -36,10 +36,13 @@ public class User
     /**
       describe each method
     */
+     
+    //returns the total number of likes
     public int getTotalLikes(){
       return totalLikes;
     }
-  
+    //sets the number of total likes
+  //@param int _totalLikes
     public setTotalLikes(_totalLikes){
       totalLikes = _totalLikes;
     }
