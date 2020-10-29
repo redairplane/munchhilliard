@@ -28,6 +28,6 @@ public class Restaurant
     public double getAverageReview()
     {
       // needs completed
-      return 0.0;
+      return reviewScoreTotal/reviewCount;
     }
 }

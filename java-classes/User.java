@@ -10,8 +10,13 @@ public class User
     private FoodReview lastReview;
     private int reviewCount;
     private double reviewScoreTotal;
+    
     // add more
+
     private String userName;
+
+    private String name;
+
 
     /**
       describe this constructor
@@ -21,6 +26,7 @@ public class User
         // assign default values
         reviewCount = 0;
         reviewScoreTotal = 0;
+        name = "none";
     }
 
     // accessors and mutators here
@@ -53,10 +59,33 @@ public class User
   
     /**
       Sets the user's name
+      @param String _userName
     */
-    public void setUserName(_userName)
+    public void setUserName(String _userName)
     {
       userName = _userName
     }
+
+    /**
+      setName(String _name)
+      Sets the user's name to a string.
+      @param _name the name of the user
+    */
+    public void setName(String _name)
+    {
+      name = _name;
+    }
+    
+    /**
+      getName()
+      Accesses the name of the user.
+      @return the name of the user
+    */
+    public String getName()
+    {
+      return name;
+    }
+  
+
 
 }

@@ -81,7 +81,23 @@ public class FoodReview
     {
       return timestamp;
     }
-
   
+  /**
+   returns the review score that was given to the restaurant.
+   @return the score of the review that was given to the restaurant.
+  
+  */
+  public double getReviewScore(){
+    return reviewScore;
+  }
+ 
+  /**
+   returns the title of the review.
+   @return the Tsring reviewTitle, which is the title of the review.
+  
+  */
+  public String getReviewTitle(){
+    return reviewTitle;
+  }
 
 }
