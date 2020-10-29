@@ -11,6 +11,7 @@ public class User
     private int reviewCount;
     private double reviewScoreTotal;
     private int totalLikes;
+    private int userAge;
     
     // add more
 
@@ -29,6 +30,7 @@ public class User
         reviewScoreTotal = 0;
         name = "none";
         totalLikes = 0;
+        userAge = 0;
     }
 
     // accessors and mutators here
@@ -58,6 +60,15 @@ public class User
     {
       return userName;
     }
+  
+     /**
+      Returns the age of the user
+      @return userAge which is the user's age
+    */
+    public String getUserAge();
+    {
+      return userAge;
+    }
 
     /**
       describe each method
@@ -75,6 +86,17 @@ public class User
     {
       userName = _userName
     }
+  
+  
+    /**
+      Sets the age of the user
+      @param int _age
+    */
+    public void setUserAge(int _age)
+    {
+      userAge = _age;
+    }
+  
 
     /**
       setName(String _name)
