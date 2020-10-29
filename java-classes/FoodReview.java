@@ -90,7 +90,14 @@ public class FoodReview
   public double getReviewScore(){
     return reviewScore;
   }
- 
+  
+  /**
+  returns the body of the review.
+  */
+  public String getReviewBody(){
+    return reviewBdoy;
+  }
+  
   /**
    returns the title of the review.
    @return the Tsring reviewTitle, which is the title of the review.
