@@ -12,7 +12,11 @@ public class User
     private double reviewScoreTotal;
     
     // add more
+
+    private String userName;
+
     private String name;
+
 
     /**
       describe this constructor
@@ -35,6 +39,15 @@ public class User
       // needs completed
       return 0.0;
     }
+  
+    /**
+      Returns the user name
+      @return userName which is the user's name
+    */
+    public String getUserName()
+    {
+      return userName;
+    }
 
     /**
       describe each method
@@ -44,6 +57,15 @@ public class User
       restaurant = _restaurant;
     }
   
+    /**
+      Sets the user's name
+      @param String _userName
+    */
+    public void setUserName(String _userName)
+    {
+      userName = _userName
+    }
+
     /**
       setName(String _name)
       Sets the user's name to a string.
@@ -64,6 +86,6 @@ public class User
       return name;
     }
   
-    
+
 
 }
