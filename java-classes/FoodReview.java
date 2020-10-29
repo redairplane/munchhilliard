@@ -16,7 +16,8 @@ public class FoodReview
     private int numFunnyLikes; // similar to Like button, but says "Funny"
     private int numCoolLikes; // similar to Like button, but says "Cool"
     private int numDislikes; // similar to Like button, but says "Dislike"
-
+    private int numSadLikes; // similar to Like button, but says "Sad"
+  
     /**
       describe this constructor
       @param
@@ -31,6 +32,7 @@ public class FoodReview
         numFunnyLikes = 0; // defaults to 0
         numCoolLikes = 0; // defaults to 0
         numDislikes = 0; // defaults to 0
+        numSadLikes = 0; // defaults to 0
         // set instance var values using parameters
         // TO DO
     }
@@ -72,7 +74,17 @@ public class FoodReview
     {
       return numDislikes;
     }
-
+    
+    /**
+    returns the number of Sad Likes
+    @return number of Sad Likes
+    */
+    public int getNumSadLikes(){
+      return numSadLikes;
+    }
+  
+  
+  
     /**
       returns the date that the review was posted
       @return LocalDate object timestamp which is the date that the review was posted
