@@ -10,6 +10,7 @@ public class User
     private FoodReview lastReview;
     private int reviewCount;
     private double reviewScoreTotal;
+    private int totalLikes;
     
     // add more
 
@@ -27,6 +28,7 @@ public class User
         reviewCount = 0;
         reviewScoreTotal = 0;
         name = "none";
+        totalLikes = 0;
     }
 
     // accessors and mutators here
@@ -34,6 +36,14 @@ public class User
     /**
       describe each method
     */
+    public int getTotalLikes(){
+      return totalLikes;
+    }
+  
+    public setTotalLikes(_totalLikes){
+      totalLikes = _totalLikes;
+    }
+  
     public double getAverageReview()
     {
       // needs completed
