@@ -10,6 +10,7 @@ public class Restaurant
     private int starRating;
     private String address;
     private String location;
+    private String typeOfFood;
       // add more
 
     /**
@@ -23,6 +24,7 @@ public class Restaurant
         name = _name;
         starRating = 0;
         location = "Not listed";
+        typeOfFood = "";
     }
 
     // accessors and mutators here
@@ -91,6 +93,24 @@ public class Restaurant
     public String getLocation()
     {
       return location;
+    }
+  
+    /**
+      setTypeOfFood(String foodType)
+      Sets the type of food that the restaurant serves
+      @param String foodType the type of food the restaurant serves
+    */
+    public void setTypeOfFood(String foodType){
+      typeOfFood = foodType;
+    }
+  
+    /**
+      getTypeOfFood()
+      Accesses and returns the type of food the restaurant serves
+      @return typeOfFood the type of food the restaurant serves
+    */
+    public String getTypeOfFood(){
+      return typeOfFood;
     }
 
   
