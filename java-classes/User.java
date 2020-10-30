@@ -21,6 +21,8 @@ public class User
     private String name;
     
     private String birthday;
+  
+    private String userEmail;
 
     /**
       describe this constructor
@@ -31,13 +33,30 @@ public class User
         reviewCount = 0;
         reviewScoreTotal = 0;
         name = "none";
-      birthday = "Unknown";
+        birthday = "Unknown";
         totalLikes = 0;
         userAge = 0;
+        userEmail = "none";
     }
 
     // accessors and mutators here
 
+    /**
+      sets the users's email
+      @param _userEmail provides the user's email
+    */
+    public void setUserEmail(String _userEmail){
+      userEmail = _userEmail;
+    }
+  
+   /**
+      returns the users's email
+      @return userEmail the user's email
+    */
+    public String getUserEmail(){
+      return userEmail;
+    }
+  
     /**
       describe each method
     */
