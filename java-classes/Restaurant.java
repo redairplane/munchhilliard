@@ -8,7 +8,9 @@ public class Restaurant
     private double reviewScoreTotal;
     private String name;
     private int starRating;
-    // add more
+    private String address;
+    private String location;
+      // add more
 
     /**
       describe this constructor
@@ -20,9 +22,28 @@ public class Restaurant
         reviewScoreTotal = 0;
         name = _name;
         starRating = 0;
+        location = "Not listed";
     }
 
     // accessors and mutators here
+  
+  
+  /**
+      Sets the resturant's address
+      @param String _address
+    */
+    public void setAddress(String _address){
+      address = _address;
+    }
+  
+     /**
+      Returns the resturant's address
+      @return String address which is the address of the resturant
+    */
+  
+    public String getAddress(){
+      return address;
+    }
 
     /**
       describe each method
@@ -32,6 +53,7 @@ public class Restaurant
       // needs completed
       return reviewScoreTotal/reviewCount;
     }
+
   
     /**
     return the star rating
@@ -49,5 +71,27 @@ public class Restaurant
       starRating = _starRating;
     }
       
+
+    
+    /**
+      setLocation(String _location)
+      Assigns a specific location to the restaurant.
+      @param _location the location of the restaurant
+    */
+    public void setLocation(String _location)
+    {
+      location = _location;
+    }
+    
+    /**
+      getLocation()
+      Returns the location of the restaurant.
+      @return the location of the restaurant
+    */
+    public String getLocation()
+    {
+      return location;
+    }
+
   
 }

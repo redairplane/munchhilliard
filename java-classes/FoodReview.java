@@ -10,13 +10,15 @@ public class FoodReview
     private double reviewScore;
     private String reviewTitle;
     private String reviewBody;
+    private String reviewerName;
     private User user;
     private LocalDate timestamp;
     private int numUsefulLikes; // similar to Like button, but says "Useful"
     private int numFunnyLikes; // similar to Like button, but says "Funny"
     private int numCoolLikes; // similar to Like button, but says "Cool"
     private int numDislikes; // similar to Like button, but says "Dislike"
-
+    private int numSadLikes; // similar to Like button, but says "Sad"
+  
     /**
       describe this constructor
       @param
@@ -31,6 +33,7 @@ public class FoodReview
         numFunnyLikes = 0; // defaults to 0
         numCoolLikes = 0; // defaults to 0
         numDislikes = 0; // defaults to 0
+        numSadLikes = 0; // defaults to 0
         // set instance var values using parameters
         // TO DO
     }
@@ -72,7 +75,17 @@ public class FoodReview
     {
       return numDislikes;
     }
-
+    
+    /**
+    returns the number of Sad Likes
+    @return number of Sad Likes
+    */
+    public int getNumSadLikes(){
+      return numSadLikes;
+    }
+  
+  
+  
     /**
       returns the date that the review was posted
       @return LocalDate object timestamp which is the date that the review was posted
@@ -90,7 +103,14 @@ public class FoodReview
   public double getReviewScore(){
     return reviewScore;
   }
- 
+  
+  /**
+  returns the body of the review.
+  */
+  public String getReviewBody(){
+    return reviewBdoy;
+  }
+  
   /**
    returns the title of the review.
    @return the Tsring reviewTitle, which is the title of the review.
@@ -99,5 +119,14 @@ public class FoodReview
   public String getReviewTitle(){
     return reviewTitle;
   }
-
+  
+  
+  /**
+   returns the name of the reviewer.
+   @return the string reviewerName, which is the name of the reviewer.
+  
+  */
+  public String getName(String _reviewerName){
+    reviewerName = _reviewerName;
+    return reviewerName;
 }
