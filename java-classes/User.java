@@ -14,7 +14,8 @@ public class User
     private int userAge;
     
     // add more
-
+    private int userAge;
+  
     private String userName;
 
     private String name;
@@ -47,6 +48,20 @@ public class User
   //@param int _totalLikes
     public setTotalLikes(_totalLikes){
       totalLikes = _totalLikes;
+    }
+    /**
+    return the users age
+    @return userAge which is the users age
+    */
+    public int getUserAge(){
+      return userAge;
+    }
+    /**
+    set the users age
+    @param int _userAge
+    */ 
+    public void setUserAge(int _userAge){
+      userAge = _userAge;
     }
   
     public double getAverageReview()
