@@ -7,6 +7,7 @@ public class Restaurant
     private int reviewCount;
     private double reviewScoreTotal;
     private String name;
+    private String address;
     // add more
     private String location;
 
@@ -23,6 +24,24 @@ public class Restaurant
     }
 
     // accessors and mutators here
+  
+  
+  /**
+      Sets the resturant's address
+      @param String _address
+    */
+    public void setAddress(String _address){
+      address = _address;
+    }
+  
+     /**
+      Returns the resturant's address
+      @return String address which is the address of the resturant
+    */
+  
+    public String getAddress(){
+      return address;
+    }
 
     /**
       describe each method
