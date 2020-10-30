@@ -10,6 +10,7 @@ public class Restaurant
     private int starRating;
     private String address;
     private String location;
+    private String cuisine;
       // add more
 
     /**
@@ -23,9 +24,27 @@ public class Restaurant
         name = _name;
         starRating = 0;
         location = "Not listed";
+        cuisine = "Unknown";
     }
 
     // accessors and mutators here
+  
+  /** 
+      sets the resturant's cuisine
+      @param String _cuisine
+    */
+    public void setCuisine(String _cuisine){
+      cuisine = _cuisine;
+    }
+  
+    /** 
+      gets the resturant's cuisine
+      @return String cuisine which is the cuisine of the resturant
+    */
+    
+    public String getCuisine(){
+      return cuisine;
+    }
   
   
   /**
