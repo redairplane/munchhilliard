@@ -19,7 +19,8 @@ public class User
     private String userName;
 
     private String name;
-
+    
+    private String birthday;
 
     /**
       describe this constructor
@@ -30,6 +31,7 @@ public class User
         reviewCount = 0;
         reviewScoreTotal = 0;
         name = "none";
+      birthday = "Unknown";
         totalLikes = 0;
         userAge = 0;
     }
@@ -134,6 +136,22 @@ public class User
     public String getName()
     {
       return name;
+    }
+  
+    /**
+      setBirthday(String _birthday)
+      Sets the user's birthday
+    */
+    public void setBirthday(String _birthday){
+      bithday =  _birthday;
+    }
+    /**
+    getBirthday()
+    Accesses the user's birthday
+    @return the user's birthday
+    */
+    public String getBirthday(){
+      return birthday;
     }
   
 
