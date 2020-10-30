@@ -11,6 +11,7 @@ public class User
     private int reviewCount;
     private double reviewScoreTotal;
     private int totalLikes;
+    private String recentLoginDay;
     
     // add more
 
@@ -29,6 +30,7 @@ public class User
         reviewScoreTotal = 0;
         name = "none";
         totalLikes = 0;
+        this.recentLoginDay = "";
     }
 
     // accessors and mutators here
@@ -40,7 +42,7 @@ public class User
       return totalLikes;
     }
   
-    public setTotalLikes(_totalLikes){
+    public void setTotalLikes(int _totalLikes){
       totalLikes = _totalLikes;
     }
   
@@ -64,7 +66,7 @@ public class User
     */
     public void setFavRestaurant(Restaurant _restaurant)
     {
-      restaurant = _restaurant;
+      favRestaurant = _restaurant;
     }
   
     /**
@@ -73,7 +75,7 @@ public class User
     */
     public void setUserName(String _userName)
     {
-      userName = _userName
+      userName = _userName;
     }
 
     /**
@@ -94,6 +96,24 @@ public class User
     public String getName()
     {
       return name;
+    }
+    /**
+      getrecentLoginDay()
+      Accesses the last login day of the user.
+      @return the last login day of the user.
+    */
+
+    public String getrecentLoginDay()
+    {
+      return recentLoginDay;
+    }
+    /**
+      setRecentLoginDay()
+      Sets the last login day of the user.
+      @param _recentLoginDay last login day of the user.
+    */
+    public void setRecentLoginDay(String _recentLoginDay){
+      this.recentLoginDay = _recentLoginDay;
     }
   
 

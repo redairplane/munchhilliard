@@ -45,12 +45,19 @@ public class FoodReview
     {
       return numUsefulLikes;
     }
+    /**
+      returns the number of useful likes on the review
+      @param _numUsefulLikes sets the Number of Useful Likes on the review.
+    */ 
+    public void setNumUsefulLikes(int _numUsefulLikes){
+      this.numUsefulLikes = _numUsefulLikes;
+    } 
   
     /**
       returns the number of funny likes
       @return int numOfFunnyLikes - the amount of times the review was marked as funny
     */  
-    public getFunnyLikes()
+    public int getFunnyLikes()
     {
       return numFunnyLikes;
     }
