@@ -98,8 +98,20 @@ public class User
       return name;
     }
   
-    public void setBirthday(_birthday){
-      
+    /**
+      setBirthday(String _birthday)
+      Sets the user's birthday
+    */
+    public void setBirthday(String _birthday){
+      bithday =  _birthday;
+    }
+    /**
+    getBirthday()
+    Accesses the user's birthday
+    @return the user's birthday
+    */
+    public String getBirthday(){
+      return birthday;
     }
   
 
