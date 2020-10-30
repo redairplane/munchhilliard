@@ -21,6 +21,8 @@ public class User
     private String name;
     
     private String birthday;
+  
+    private String userEmail;
 
     /**
       describe this constructor
@@ -34,6 +36,7 @@ public class User
       birthday = "Unknown";
         totalLikes = 0;
         userAge = 0;
+        userEmai = "";
     }
 
     // accessors and mutators here
@@ -153,6 +156,26 @@ public class User
     public String getBirthday(){
       return birthday;
     }
+  
+    /**
+      setUserEmail(String email)
+      Sets the user's email
+      @param String email which is the user's email
+    */
+    public void setUserEmail(String email){
+      userEmail = email;
+    }
+    
+    /**
+      getUserEmail()
+      Accesses the user's email
+      @return the user's email
+    */
+    public String getUserEmail(){
+      return userEmail;
+    }
+      
+  
   
 
 
