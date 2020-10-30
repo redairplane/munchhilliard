@@ -46,7 +46,7 @@ public class FoodReview
       return numUsefulLikes;
     }
     /**
-      returns the number of useful likes on the review
+      sets the number of useful likes on the review
       @param _numUsefulLikes sets the Number of Useful Likes on the review.
     */ 
     public void setNumUsefulLikes(int _numUsefulLikes){
