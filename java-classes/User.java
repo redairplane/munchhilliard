@@ -16,7 +16,9 @@ public class User
     private String userName;
     private String name;
     private String birthday;
+    private String userEmail;
     // add more
+
 
     /**
       describe this constructor
@@ -31,6 +33,7 @@ public class User
         totalLikes = 0;
         this.recentLoginDay = "";
         userAge = 0;
+        userEmai = "";
 
     }
 
@@ -49,7 +52,6 @@ public class User
     //sets the number of total likes
     //@param int _totalLikes
     public setTotalLikes(_totalLikes){
-
       totalLikes = _totalLikes;
     }
   
@@ -176,6 +178,26 @@ public class User
     public String getBirthday(){
       return birthday;
     }
+  
+    /**
+      setUserEmail(String email)
+      Sets the user's email
+      @param String email which is the user's email
+    */
+    public void setUserEmail(String email){
+      userEmail = email;
+    }
+    
+    /**
+      getUserEmail()
+      Accesses the user's email
+      @return the user's email
+    */
+    public String getUserEmail(){
+      return userEmail;
+    }
+      
+  
   
 
 
