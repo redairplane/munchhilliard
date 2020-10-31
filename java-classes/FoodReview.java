@@ -32,6 +32,8 @@ public class FoodReview
         numFunnyLikes = 0; // defaults to 0
         numCoolLikes = 0; // defaults to 0
         numDislikes = 0; // defaults to 0
+        numUsefulLikes = 0;
+        numOfHearts = 0;
         // set instance var values using parameters
         // TO DO
     }
