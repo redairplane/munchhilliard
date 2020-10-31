@@ -16,7 +16,9 @@ public class Restaurant
     private int numberOfRestraunts;
     private String cuisine;
     private String typeOfFood;
+    private int numOfMenuItems;
       // add more
+
 
     /**
       describe this constructor
@@ -30,14 +32,32 @@ public class Restaurant
         this.totalCustomers = 0;
         starRating = 0;
         location = "Not listed";
+        numOfMenuItems = 0;
         numberOfRestraunts = 0;
         cuisine = "Unknown";
         typeOfFood = "";
         dishOfTheDay = "Unknown";
+
     }
 
     // accessors and mutators here
   
+
+    /**
+      Sets the number of items on the resturant's menu
+      @param int _numOfMenuItems the number of menu items
+    */
+    public void setNumOfMenuItems(int _numOfMenuItems){
+      numOfMenuItems = _numOfMenuItems;
+    }
+  
+    /**
+      Gets the number of items on the resturant's menu
+      @return numOfMenuItems the number of menu items
+    */
+    public int getNumOfMenuItems(){
+      return numOfMenuItems;
+    }
 
     /**
     Sets the number of restraunts in the chain
@@ -57,6 +77,7 @@ public class Restaurant
      return numberOfRestraunts; 
     }
   
+
 
     /** 
       sets the resturant's cuisine
