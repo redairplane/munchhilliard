@@ -13,6 +13,7 @@ public class Restaurant
     private int starRating;
     private String address;
     private String location;
+    private String cuisine;
     private String typeOfFood;
       // add more
 
@@ -28,12 +29,32 @@ public class Restaurant
         this.totalCustomers = 0;
         starRating = 0;
         location = "Not listed";
+        cuisine = "Unknown";
         typeOfFood = "";
         dishOfTheDay = "Unknown";
     }
 
     // accessors and mutators here
   
+
+  /** 
+      sets the resturant's cuisine
+      @param String _cuisine
+    */
+    public void setCuisine(String _cuisine){
+      cuisine = _cuisine;
+    }
+  
+    /** 
+      gets the resturant's cuisine
+      @return String cuisine which is the cuisine of the resturant
+    */
+    
+    public String getCuisine(){
+      return cuisine;
+    }
+  
+
 
     /**
       Returns the type of food in the restaurant
@@ -51,6 +72,7 @@ public class Restaurant
     public void setTypeOfFood(String _typeOfFood)
     {
       typeOfFood = _typeOfFood;
+
 
   
     /**
