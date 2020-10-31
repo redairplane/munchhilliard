@@ -103,6 +103,16 @@ public class FoodReview
   public double getReviewScore(){
     return reviewScore;
   }
+  
+  /**
+   returns the Title for the review written.
+   @return reviewTitle - the title that goes with the review.
+  
+  */
+  public String getReviewTitle(){
+    return reviewTitle;
+  }
+  
 
   /**
   returns the body of the review.
