@@ -21,6 +21,8 @@ public class User
     private String name;
     
     private String birthday;
+  
+    private String reviewDate;
 
     /**
       describe this constructor
@@ -34,6 +36,7 @@ public class User
       birthday = "Unknown";
         totalLikes = 0;
         userAge = 0;
+        reviewDate = "none"
     }
 
     // accessors and mutators here
@@ -41,6 +44,24 @@ public class User
     /**
       describe each method
     */
+   
+    /**
+    sets the date that the review was posted
+    @param String _reviewDate
+    */
+    public void setReviewDate(String _reviewDate){
+  
+      reviewDate = _reviewDate;
+    }
+  
+    /**
+    gets the date that the review was posted
+    @return reviewDate which is the date that the review was posted
+    */
+    public String getReviewDate(){
+     
+      return reviewDate;
+    }
      
     //returns the total number of likes
     public int getTotalLikes(){
