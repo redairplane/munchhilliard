@@ -17,8 +17,10 @@ public class FoodReview
     private int numFunnyLikes; // similar to Like button, but says "Funny"
     private int numCoolLikes; // similar to Like button, but says "Cool"
     private int numDislikes; // similar to Like button, but says "Dislike"
+    private int numOfHearts;
     private int numSadLikes; // similar to Like button, but says "Sad"
   
+
     /**
       describe this constructor
       @param
@@ -33,7 +35,10 @@ public class FoodReview
         numFunnyLikes = 0; // defaults to 0
         numCoolLikes = 0; // defaults to 0
         numDislikes = 0; // defaults to 0
+        numUsefulLikes = 0;
+        numOfHearts = 0;
         numSadLikes = 0; // defaults to 0
+
         // set instance var values using parameters
         // TO DO
     }
@@ -48,12 +53,27 @@ public class FoodReview
     {
       return numUsefulLikes;
     }
-
+    /**
+      sets the number of useful likes on the review
+      @param _numUsefulLikes sets the Number of Useful Likes on the review.
+    */ 
+    public void setNumUsefulLikes(int _numUsefulLikes){
+      this.numUsefulLikes = _numUsefulLikes;
+    }
+     
+        /**
+      sets the number of useful likes on the review
+      @param _numOfHearts sets the Number of Hearts on the review.
+    */ 
+    public void setnumOfHearts(int _numOfHearts){
+      this.numOfHearts = _numOfHearts;
+    } 
+  
     /**
       returns the number of funny likes
       @return int numOfFunnyLikes - the amount of times the review was marked as funny
-    */
-    public getFunnyLikes()
+    */  
+    public int getFunnyLikes()
     {
       return numFunnyLikes;
     }

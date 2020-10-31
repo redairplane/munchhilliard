@@ -7,10 +7,12 @@ public class Restaurant
     private int reviewCount;
     private double reviewScoreTotal;
     private String name;
+    private int totalCustomers;
     private int starRating;
     private String address;
     private String location;
       // add more
+
 
     /**
       describe this constructor
@@ -20,9 +22,11 @@ public class Restaurant
         // assign default values
         reviewCount = 0;
         reviewScoreTotal = 0;
-        name = _name;
+        this.name = _name;
+        this.totalCustomers = 0;
         starRating = 0;
         location = "Not listed";
+
     }
 
     // accessors and mutators here
@@ -53,6 +57,27 @@ public class Restaurant
       // needs completed
       return reviewScoreTotal/reviewCount;
     }
+
+    /**
+      getTotalCustomers()
+      Gets the total customers and returns.
+      @return  the total number of customers.
+    */
+
+    public int getTotalCustomers()
+    {
+      return totalCustomers;
+    }
+    /**
+      getTotalCustomers()
+      Sets the total customers.
+      @param _totalCustomers Sets the total number of customers.
+    */
+    public void setTotalCustomers(int _totalCustomers){
+      this.totalCustomers = _totalCustomers;
+
+    }
+
 
   
     /**
@@ -95,3 +120,4 @@ public class Restaurant
 
   
 }
+
