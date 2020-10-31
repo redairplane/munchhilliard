@@ -13,6 +13,7 @@ public class Restaurant
     private int starRating;
     private String address;
     private String location;
+    private int numberOfRestraunts;
     private String cuisine;
     private String typeOfFood;
       // add more
@@ -29,6 +30,7 @@ public class Restaurant
         this.totalCustomers = 0;
         starRating = 0;
         location = "Not listed";
+        numberOfRestraunts = 0;
         cuisine = "Unknown";
         typeOfFood = "";
         dishOfTheDay = "Unknown";
@@ -37,13 +39,33 @@ public class Restaurant
     // accessors and mutators here
   
 
-  /** 
+    /**
+    Sets the number of restraunts in the chain
+    @param int _numberOfRestraunts
+    */
+    public void setNumberOfRestraunts(int _numberOfRestraunts){
+     
+      numberOfRestraunts = _numberOfRestraunts;
+    }
+  
+    /**
+    Gets the number of restraunts
+    @return numberOfRestraunts which is the number of restraunts in the chain
+    */
+    public int getNumberOfRestraunts(){
+      
+     return numberOfRestraunts; 
+    }
+  
+
+    /** 
       sets the resturant's cuisine
       @param String _cuisine
     */
     public void setCuisine(String _cuisine){
       cuisine = _cuisine;
     }
+
   
     /** 
       gets the resturant's cuisine
@@ -72,7 +94,7 @@ public class Restaurant
     public void setTypeOfFood(String _typeOfFood)
     {
       typeOfFood = _typeOfFood;
-
+    }
 
   
     /**
@@ -113,6 +135,7 @@ public class Restaurant
     {
       return totalCustomers;
     }
+  
     /**
       getTotalCustomers()
       Sets the total customers.
