@@ -7,13 +7,13 @@ public class Restaurant
     private int reviewCount;
     private double reviewScoreTotal;
     private String name;
+    private String dishOfTheDay;
     private String typeOfFood;
     private int totalCustomers;
     private int starRating;
     private String address;
     private String location;
       // add more
-
 
     /**
       describe this constructor
@@ -27,7 +27,7 @@ public class Restaurant
         this.totalCustomers = 0;
         starRating = 0;
         location = "Not listed";
-
+        dishOfTheDay = "Unknown";
     }
 
     // accessors and mutators here
@@ -51,7 +51,7 @@ public class Restaurant
       typeOfFood = _typeOfFood;
 
   
-  /**
+    /**
       Sets the resturant's address
       @param String _address
     */
@@ -68,6 +68,7 @@ public class Restaurant
       return address;
 
     }
+
 
     /**
       describe each method
@@ -119,25 +120,20 @@ public class Restaurant
 
     
     /**
-      setLocation(String _location)
-      Assigns a specific location to the restaurant.
-      @param _location the location of the restaurant
+    setDishOfTheDay(Sring _dishOfTheDay)
+    Sets the dish of the day
     */
-    public void setLocation(String _location)
-    {
-      location = _location;
+    public void setDishOfTheDay(String _dishOfTheDay){
+      dishOfTheDay = _dishOfTheDay;
     }
-    
+  
     /**
-      getLocation()
-      Returns the location of the restaurant.
-      @return the location of the restaurant
+    getDishOfTheDay()
+    Accesses the dish of the day
     */
-    public String getLocation()
-    {
-      return location;
+    public String getDishOfTheDay(){
+      return dishOfTheDay;
     }
 
-  
 }
 
