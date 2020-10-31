@@ -10,6 +10,7 @@ public class Restaurant
     private int starRating;
     private String address;
     private String location;
+    private int numberOfRestraunts;
       // add more
 
     /**
@@ -23,9 +24,28 @@ public class Restaurant
         name = _name;
         starRating = 0;
         location = "Not listed";
+        numberOfRestraunts = 0;
     }
 
     // accessors and mutators here
+  
+    /**
+    Sets the number of restraunts in the chain
+    @param int _numberOfRestraunts
+    */
+    public void setNumberOfRestraunts(int _numberOfRestraunts){
+     
+      numberOfRestraunts = _numberOfRestraunts;
+    }
+  
+    /**
+    Gets the number of restraunts
+    @return numberOfRestraunts which is the number of restraunts in the chain
+    */
+    public int getNumberOfRestraunts(){
+      
+     return numberOfRestraunts; 
+    }
   
   
   /**
