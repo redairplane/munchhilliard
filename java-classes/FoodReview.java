@@ -10,6 +10,7 @@ public class FoodReview
     private double reviewScore;
     private String reviewTitle;
     private String reviewBody;
+    private String reviewerName;
     private User user;
     private LocalDate timestamp;
     private int numUsefulLikes; // similar to Like button, but says "Useful"
@@ -36,32 +37,32 @@ public class FoodReview
     }
 
     // accessors and mutators here
-  
+
     /**
       returns the number of useful likes on the review
       @return numUsefulLikes which is hoe many useful likes on the review
-    */ 
+    */
     public int getNumUsefulLikes()
     {
       return numUsefulLikes;
     }
-  
+
     /**
       returns the number of funny likes
       @return int numOfFunnyLikes - the amount of times the review was marked as funny
-    */  
+    */
     public getFunnyLikes()
     {
       return numFunnyLikes;
     }
-    
+
     /**
       retuns the number of cool likes
       @return number of cool likes
     */
     public int getNumCoolLikes()
     {
-      return numCoolLikes; 
+      return numCoolLikes;
     }
 
     /**
@@ -81,30 +82,47 @@ public class FoodReview
     {
       return timestamp;
     }
-  
+
   /**
    returns the review score that was given to the restaurant.
    @return the score of the review that was given to the restaurant.
-  
+
   */
   public double getReviewScore(){
     return reviewScore;
   }
- 
+
+  /**
+  returns the body of the review.
+  */
+  public String getReviewBody(){
+    return reviewBdoy;
+  }
+
   /**
    returns the title of the review.
    @return the Tsring reviewTitle, which is the title of the review.
-  
+
   */
   public String getReviewTitle(){
     return reviewTitle;
   }
-  
-  public String getReviewBody(){
-    return reviewBody;
-  }
+
   /**
     returns the body of the review.
     @return the String reviewBody, which is the body of the review.
    */
+  public String getReviewBody(){
+    return reviewBody;
+  }
+
+   /**
+    returns the name of the reviewer.
+    @return the string reviewerName, which is the name of the reviewer.
+
+   */
+   public String getName(String _reviewerName){
+     reviewerName = _reviewerName;
+     return reviewerName;
+   }
 }
