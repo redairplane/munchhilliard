@@ -7,6 +7,9 @@ public class Restaurant
     private int reviewCount;
     private double reviewScoreTotal;
     private String name;
+    private String dishOfTheDay;
+    private String typeOfFood;
+    private int totalCustomers;
     private int starRating;
     private String address;
     private String location;
@@ -21,16 +24,36 @@ public class Restaurant
         // assign default values
         reviewCount = 0;
         reviewScoreTotal = 0;
-        name = _name;
+        this.name = _name;
+        this.totalCustomers = 0;
         starRating = 0;
         location = "Not listed";
         typeOfFood = "";
+        dishOfTheDay = "Unknown";
     }
 
     // accessors and mutators here
   
+
+    /**
+      Returns the type of food in the restaurant
+      @return typeOfFood which is the type of food in the restaurant
+    */
+    public String getTypeOfFood()
+    {
+      return typeOfFood;
+    }
   
-  /**
+    /**
+      Sets the type of food in the restaurant
+      @param _typeOfFood the type of food in the restaurant
+    */
+    public void setTypeOfFood(String _typeOfFood)
+    {
+      typeOfFood = _typeOfFood;
+
+  
+    /**
       Sets the resturant's address
       @param String _address
     */
@@ -45,7 +68,9 @@ public class Restaurant
   
     public String getAddress(){
       return address;
+
     }
+
 
     /**
       describe each method
@@ -55,6 +80,27 @@ public class Restaurant
       // needs completed
       return reviewScoreTotal/reviewCount;
     }
+
+    /**
+      getTotalCustomers()
+      Gets the total customers and returns.
+      @return  the total number of customers.
+    */
+
+    public int getTotalCustomers()
+    {
+      return totalCustomers;
+    }
+    /**
+      getTotalCustomers()
+      Sets the total customers.
+      @param _totalCustomers Sets the total number of customers.
+    */
+    public void setTotalCustomers(int _totalCustomers){
+      this.totalCustomers = _totalCustomers;
+
+    }
+
 
   
     /**
@@ -76,23 +122,19 @@ public class Restaurant
 
     
     /**
-      setLocation(String _location)
-      Assigns a specific location to the restaurant.
-      @param _location the location of the restaurant
+    setDishOfTheDay(Sring _dishOfTheDay)
+    Sets the dish of the day
     */
-    public void setLocation(String _location)
-    {
-      location = _location;
+    public void setDishOfTheDay(String _dishOfTheDay){
+      dishOfTheDay = _dishOfTheDay;
     }
-    
+  
     /**
-      getLocation()
-      Returns the location of the restaurant.
-      @return the location of the restaurant
+    getDishOfTheDay()
+    Accesses the dish of the day
     */
-    public String getLocation()
-    {
-      return location;
+    public String getDishOfTheDay(){
+      return dishOfTheDay;
     }
   
     /**
@@ -113,5 +155,5 @@ public class Restaurant
       return typeOfFood;
     }
 
-  
 }
+
