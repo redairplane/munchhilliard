@@ -11,18 +11,14 @@ public class User
     private int reviewCount;
     private double reviewScoreTotal;
     private int totalLikes;
+    private String recentLoginDay;
     private int userAge;
-    
-    // add more
-    private int userAge;
-  
     private String userName;
-
     private String name;
-    
     private String birthday;
-  
     private String userEmail;
+    // add more
+
 
     /**
       describe this constructor
@@ -33,10 +29,12 @@ public class User
         reviewCount = 0;
         reviewScoreTotal = 0;
         name = "none";
-      birthday = "Unknown";
+        birthday = "Unknown";
         totalLikes = 0;
+        this.recentLoginDay = "";
         userAge = 0;
         userEmai = "";
+
     }
 
     // accessors and mutators here
@@ -49,11 +47,14 @@ public class User
     public int getTotalLikes(){
       return totalLikes;
     }
+
+  
     //sets the number of total likes
-  //@param int _totalLikes
+    //@param int _totalLikes
     public setTotalLikes(_totalLikes){
       totalLikes = _totalLikes;
     }
+  
     /**
     return the users age
     @return userAge which is the users age
@@ -61,6 +62,7 @@ public class User
     public int getUserAge(){
       return userAge;
     }
+  
     /**
     set the users age
     @param int _userAge
@@ -98,7 +100,7 @@ public class User
     */
     public void setFavRestaurant(Restaurant _restaurant)
     {
-      restaurant = _restaurant;
+      favRestaurant = _restaurant;
     }
   
     /**
@@ -107,7 +109,7 @@ public class User
     */
     public void setUserName(String _userName)
     {
-      userName = _userName
+      userName = _userName;
     }
   
   
@@ -142,12 +144,32 @@ public class User
     }
   
     /**
+      getrecentLoginDay()
+      Accesses the last login day of the user.
+      @return the last login day of the user.
+    */
+    public String getrecentLoginDay()
+    {
+      return recentLoginDay;
+    }
+  
+    /**
+      setRecentLoginDay()
+      Sets the last login day of the user.
+      @param _recentLoginDay last login day of the user.
+    */
+    public void setRecentLoginDay(String _recentLoginDay){
+      this.recentLoginDay = _recentLoginDay;
+    }
+  
+    /**
       setBirthday(String _birthday)
       Sets the user's birthday
     */
     public void setBirthday(String _birthday){
       bithday =  _birthday;
     }
+  
     /**
     getBirthday()
     Accesses the user's birthday
