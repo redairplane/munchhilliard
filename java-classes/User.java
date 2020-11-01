@@ -20,8 +20,6 @@ public class User
     private String userEmail;
     // add more
 
-
-
     /**
       describe this constructor
     */
@@ -35,12 +33,27 @@ public class User
         totalLikes = 0;
         this.recentLoginDay = "";
         userAge = 0;
-        userEmai = "";
-
+        userEmail = "none";
     }
 
     // accessors and mutators here
 
+    /**
+      sets the users's email
+      @param _userEmail provides the user's email
+    */
+    public void setUserEmail(String _userEmail){
+      userEmail = _userEmail;
+    }
+  
+   /**
+      returns the users's email
+      @return userEmail the user's email
+    */
+    public String getUserEmail(){
+      return userEmail;
+    }
+  
     /**
       describe each method
     */
