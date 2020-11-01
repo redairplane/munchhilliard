@@ -11,18 +11,14 @@ public class User
     private int reviewCount;
     private double reviewScoreTotal;
     private int totalLikes;
+    private String recentLoginDay;
     private int userAge;
-    
-    // add more
-    private int userAge;
-  
     private String userName;
-
     private String name;
-    
     private String birthday;
-  
+    private String gender;
     private String userEmail;
+    // add more
 
     /**
       describe this constructor
@@ -35,6 +31,7 @@ public class User
         name = "none";
         birthday = "Unknown";
         totalLikes = 0;
+        this.recentLoginDay = "";
         userAge = 0;
         userEmail = "none";
     }
@@ -65,11 +62,14 @@ public class User
     public int getTotalLikes(){
       return totalLikes;
     }
+
+  
     //sets the number of total likes
-  //@param int _totalLikes
+    //@param int _totalLikes
     public setTotalLikes(_totalLikes){
       totalLikes = _totalLikes;
     }
+  
     /**
     return the users age
     @return userAge which is the users age
@@ -77,12 +77,13 @@ public class User
     public int getUserAge(){
       return userAge;
     }
+  
     /**
-    set the users age
-    @param int _userAge
+    set the users gender
+    @param String _gender
     */ 
-    public void setUserAge(int _userAge){
-      userAge = _userAge;
+    public void setUserGender(String _gender){
+      gender = _gender;
     }
   
     public double getAverageReview()
@@ -101,12 +102,12 @@ public class User
     }
   
      /**
-      Returns the age of the user
-      @return userAge which is the user's age
+      Returns the gender of the user
+      @return gender which is the user's gender
     */
-    public String getUserAge();
+    public String userGender();
     {
-      return userAge;
+      return gender;
     }
 
     /**
@@ -114,7 +115,7 @@ public class User
     */
     public void setFavRestaurant(Restaurant _restaurant)
     {
-      restaurant = _restaurant;
+      favRestaurant = _restaurant;
     }
   
     /**
@@ -123,7 +124,7 @@ public class User
     */
     public void setUserName(String _userName)
     {
-      userName = _userName
+      userName = _userName;
     }
   
   
@@ -158,12 +159,32 @@ public class User
     }
   
     /**
+      getrecentLoginDay()
+      Accesses the last login day of the user.
+      @return the last login day of the user.
+    */
+    public String getrecentLoginDay()
+    {
+      return recentLoginDay;
+    }
+  
+    /**
+      setRecentLoginDay()
+      Sets the last login day of the user.
+      @param _recentLoginDay last login day of the user.
+    */
+    public void setRecentLoginDay(String _recentLoginDay){
+      this.recentLoginDay = _recentLoginDay;
+    }
+  
+    /**
       setBirthday(String _birthday)
       Sets the user's birthday
     */
     public void setBirthday(String _birthday){
       bithday =  _birthday;
     }
+  
     /**
     getBirthday()
     Accesses the user's birthday
@@ -172,6 +193,26 @@ public class User
     public String getBirthday(){
       return birthday;
     }
+  
+    /**
+      setUserEmail(String email)
+      Sets the user's email
+      @param String email which is the user's email
+    */
+    public void setUserEmail(String email){
+      userEmail = email;
+    }
+    
+    /**
+      getUserEmail()
+      Accesses the user's email
+      @return the user's email
+    */
+    public String getUserEmail(){
+      return userEmail;
+    }
+      
+  
   
 
 
