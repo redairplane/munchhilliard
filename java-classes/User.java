@@ -16,8 +16,10 @@ public class User
     private String userName;
     private String name;
     private String birthday;
+    private String gender;
     private String userEmail;
     // add more
+
 
 
     /**
@@ -64,11 +66,11 @@ public class User
     }
   
     /**
-    set the users age
-    @param int _userAge
+    set the users gender
+    @param String _gender
     */ 
-    public void setUserAge(int _userAge){
-      userAge = _userAge;
+    public void setUserGender(String _gender){
+      gender = _gender;
     }
   
     public double getAverageReview()
@@ -87,12 +89,12 @@ public class User
     }
   
      /**
-      Returns the age of the user
-      @return userAge which is the user's age
+      Returns the gender of the user
+      @return gender which is the user's gender
     */
-    public String getUserAge();
+    public String userGender();
     {
-      return userAge;
+      return gender;
     }
 
     /**
