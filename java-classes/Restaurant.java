@@ -17,6 +17,7 @@ public class Restaurant
     private String cuisine;
     private String typeOfFood;
     private int numOfMenuItems;
+    private String typeOfDrink;
       // add more
 
 
@@ -37,6 +38,7 @@ public class Restaurant
         cuisine = "Unknown";
         typeOfFood = "";
         dishOfTheDay = "Unknown";
+        typeOfDrink = "";
 
     }
 
@@ -116,7 +118,26 @@ public class Restaurant
     {
       typeOfFood = _typeOfFood;
     }
-
+    
+    /**
+      Return the type of drinks available in the restaurant
+      @return typeOfDrink which is the type of drink in the restaurant
+    */
+    public String getTypeOfDrink()
+    {
+      return typeOFDrink;
+    }
+    
+  
+    /**
+      Sets the type of food in the restaurant
+      @param_typeOfDrink thr type of drink in the restaurant
+    */
+    public void setTypeOfDRink(String _typeOfDrink)
+    {
+      typeOfDrink = _typeOfDrink;
+    }
+    
   
     /**
       Sets the resturant's address
