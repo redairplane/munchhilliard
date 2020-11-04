@@ -167,4 +167,12 @@ public class FoodReview
      reviewerName = _reviewerName;
      return reviewerName;
    }
+  
+    /**
+      returns the user who created the review
+      @return the User user, which created the review.
+    */ 
+    public User getUser(){
+      return user;
+    } 
 }
