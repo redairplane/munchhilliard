@@ -18,6 +18,7 @@ public class User
     private String birthday;
     private String gender;
     private String userEmail;
+    private String affiliation;
     // add more
 
     /**
@@ -34,11 +35,29 @@ public class User
         this.recentLoginDay = "";
         userAge = 0;
         userEmail = "none";
+        affiliation = "none";
 
     }
 
     // accessors and mutators here
 
+    /**
+      sets the user's affiliation
+      @param _affiliation provides the users affiliation
+    */
+    public void setAffiliation(_affiliation){
+     
+      affiliation = _affiliation;
+    }
+    /**
+      gets the user's affiliation
+      @return affiliation which is the user's affiliation
+     */
+    public String getAffiliation(){
+      
+     return affiliation; 
+    }
+  
     /**
       sets the users's email
       @param _userEmail provides the user's email
