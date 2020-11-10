@@ -20,6 +20,7 @@ public class User
     private String userEmail;
     private String affiliation;
     // add more
+    private int followers;
 
     /**
       describe this constructor
@@ -36,7 +37,7 @@ public class User
         userAge = 0;
         userEmail = "none";
         affiliation = "none";
-
+        followers = 0;
     }
 
     // accessors and mutators here
@@ -234,8 +235,21 @@ public class User
       return userEmail;
     }
       
-  
-  
+    /**
+      getFollowers()
+      Returns the user's followers.
+      @return the user's followers
+    */
+    public int getFollowers(){
+      return followers;
+    }
 
-
+    /**
+      setfollowers(int _followers)
+      Sets the user's followers
+      @param String email which is the user's email
+    */
+    public void setFollowers(String _followers){
+      followers = _followers;
+    }
 }
