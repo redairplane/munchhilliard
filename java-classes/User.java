@@ -19,6 +19,7 @@ public class User
     private String gender;
     private String userEmail;
     private String affiliation;
+    private String location;
     // add more
     private int followers;
 
@@ -38,6 +39,7 @@ public class User
         userEmail = "none";
         affiliation = "none";
         followers = 0;
+        location = "Unknown";
     }
 
     // accessors and mutators here
@@ -74,6 +76,28 @@ public class User
     public String getUserEmail(){
       return userEmail;
     }
+  
+    /**
+      setUserLocation(String location)
+      Sets the user's location 
+      @param String location which is the user's location
+    */
+  
+     public void setLocation(String _location){
+      location = _location;
+    }
+  
+    /**
+    getLocation()
+    Acesses the user location 
+    @return the user's location
+    
+    */
+  
+     public String getLocation(){
+      return location;
+    }
+
   
     /**
       describe each method
