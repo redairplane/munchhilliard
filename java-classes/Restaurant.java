@@ -18,6 +18,7 @@ public class Restaurant
     private String typeOfFood;
     private int numOfMenuItems;
     private String typeOfDrink;
+    private int emplopyees;
       // add more
 
 
@@ -39,6 +40,7 @@ public class Restaurant
         typeOfFood = "";
         dishOfTheDay = "Unknown";
         typeOfDrink = "";
+        employees = 0;
 
     }
 
@@ -242,5 +244,22 @@ public class Restaurant
       return typeOfFood;
     }
 
+    /**
+      setEmployees(int _employees)
+      Sets the number of employees that the restaurant has.
+      @param int employees the number of employees that the restaurant has.
+    */
+    public void setEmployees(int _employees){
+      employees = _employees;
+    }
+  
+    /**
+      getEmployees()
+      Returns the number of employees that the restaurant has.
+      @return employees the number of employees that the restaurant has.
+    */
+    public String getEmployees(){
+      return employees;
+    }
 }
 
