@@ -18,7 +18,7 @@ public class Restaurant
     private String typeOfFood;
     private int numOfMenuItems;
     private String typeOfDrink;
-    private int emplopyees;
+    private int employees;
       // add more
 
 
