@@ -21,6 +21,7 @@ public class FoodReview
     private int numSadLikes; // similar to Like button, but says "Sad"
   
 
+    
     /**
       describe this constructor
       @param
@@ -31,14 +32,6 @@ public class FoodReview
     */
     public FoodReview(Restaurant _restaurant, double _reviewScore, String _reviewTitle, String _reviewBody, User _user)
     {
-        numUsefulLikes = 0; // defaults to 0
-        numFunnyLikes = 0; // defaults to 0
-        numCoolLikes = 0; // defaults to 0
-        numDislikes = 0; // defaults to 0
-        numUsefulLikes = 0;
-        numOfHearts = 0;
-        numSadLikes = 0; // defaults to 0
-
         // set instance var values using parameters
         // TO DO
     }
@@ -51,14 +44,15 @@ public class FoodReview
     */
     public int getNumUsefulLikes()
     {
-      return numUsefulLikes;
+      // TO DO
+      return 0;
     }
     /**
       sets the number of useful likes on the review
       @param _numUsefulLikes sets the Number of Useful Likes on the review.
     */ 
     public void setNumUsefulLikes(int _numUsefulLikes){
-      this.numUsefulLikes = _numUsefulLikes;
+      // TO DO
     }
      
         /**
@@ -66,7 +60,7 @@ public class FoodReview
       @param _numOfHearts sets the Number of Hearts on the review.
     */ 
     public void setnumOfHearts(int _numOfHearts){
-      this.numOfHearts = _numOfHearts;
+      // TO DO
     } 
   
     /**
@@ -75,7 +69,8 @@ public class FoodReview
     */  
     public int getFunnyLikes()
     {
-      return numFunnyLikes;
+      // TO DO
+      return 0;
     }
 
     /**
@@ -84,7 +79,7 @@ public class FoodReview
     */
     public int getNumCoolLikes()
     {
-      return numCoolLikes;
+      return 0; // TO DO
     }
 
     /**
@@ -93,7 +88,7 @@ public class FoodReview
     */
     public int getNumDislikes()
     {
-      return numDislikes;
+      return 0; // TO DO
     }
     
     /**
@@ -101,7 +96,7 @@ public class FoodReview
     @return number of Sad Likes
     */
     public int getNumSadLikes(){
-      return numSadLikes;
+      return 0; // TO DO
     }
   
   
@@ -112,7 +107,7 @@ public class FoodReview
     */
     public LocalDate getTimestamp()
     {
-      return timestamp;
+      return 0; // TO DO
     }
 
   /**
@@ -121,7 +116,7 @@ public class FoodReview
 
   */
   public double getReviewScore(){
-    return reviewScore;
+    return 0; // TO DO
   }
   
   /**
@@ -130,7 +125,7 @@ public class FoodReview
   
   */
   public String getReviewTitle(){
-    return reviewTitle;
+    return ""; // TO DO
   }
   
 
@@ -138,7 +133,7 @@ public class FoodReview
   returns the body of the review.
   */
   public String getReviewBody(){
-    return reviewBdoy;
+    return ""; // TO DO
   }
 
   /**
@@ -147,7 +142,7 @@ public class FoodReview
 
   */
   public String getReviewTitle(){
-    return reviewTitle;
+    return ""; // TO DO
   }
 
   /**
@@ -155,7 +150,7 @@ public class FoodReview
     @return the String reviewBody, which is the body of the review.
    */
   public String getReviewBody(){
-    return reviewBody;
+    return ""; // TO DO
   }
 
    /**
@@ -163,9 +158,8 @@ public class FoodReview
     @return the string reviewerName, which is the name of the reviewer.
 
    */
-   public String getName(String _reviewerName){
-     reviewerName = _reviewerName;
-     return reviewerName;
+   public String getName(){
+     return ""; // TO DO
    }
   
     /**
@@ -173,6 +167,6 @@ public class FoodReview
       @return the User user, which created the review.
     */ 
     public User getUser(){
-      return user;
+      return null; // TO DO
     } 
 }
