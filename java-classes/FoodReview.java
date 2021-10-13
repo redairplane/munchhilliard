@@ -13,12 +13,11 @@ public class FoodReview
     private String reviewerName;
     private User user;
     private LocalDate timestamp;
+    private int numOfHeartLikes; // traditional Like button
     private int numUsefulLikes; // similar to Like button, but says "Useful"
     private int numFunnyLikes; // similar to Like button, but says "Funny"
     private int numCoolLikes; // similar to Like button, but says "Cool"
     private int numDislikes; // similar to Like button, but says "Dislike"
-    private int numOfHearts;
-    private int numSadLikes; // similar to Like button, but says "Sad"
   
 
     
@@ -40,26 +39,35 @@ public class FoodReview
 
     /**
       returns the number of useful likes on the review
-      @return numUsefulLikes which is hoe many useful likes on the review
+      @return numUsefulLikes which is how many useful likes on the review
     */
-    public int getNumUsefulLikes()
+    public int getUsefulLikes()
     {
-      // TO DO
-      return 0;
+      
+      return 0; // TO DO
     }
+  
     /**
-      sets the number of useful likes on the review
-      @param _numUsefulLikes sets the Number of Useful Likes on the review.
+      adds one useful like for the review
     */ 
-    public void setNumUsefulLikes(int _numUsefulLikes){
+    public void addUsefulLike(){
       // TO DO
     }
-     
-        /**
-      sets the number of useful likes on the review
-      @param _numOfHearts sets the Number of Hearts on the review.
+    
+    /**
+      returns the number of heart likes on the review
+      @return numHeartLikes which is how many heart likes on the review
+    */
+    public int getHeartLikes()
+    {
+      
+      return 0; // TO DO
+    }
+  
+    /**
+      adds one heart like for the review
     */ 
-    public void setnumOfHearts(int _numOfHearts){
+    public void addHeartLike(){
       // TO DO
     } 
   
@@ -69,27 +77,48 @@ public class FoodReview
     */  
     public int getFunnyLikes()
     {
-      // TO DO
-      return 0;
+      
+      return 0; // TO DO
     }
+  
+    /**
+      
+    */ 
+    public void addFunnyLike(){
+      // TO DO
+    } 
 
     /**
       retuns the number of cool likes
       @return number of cool likes
     */
-    public int getNumCoolLikes()
+    public int getCoolLikes()
     {
       return 0; // TO DO
     }
+  
+    /**
+      
+    */ 
+    public void addCoolLike(){
+      // TO DO
+    } 
 
     /**
       retuns the number of dislikes
       @return number of dislikes
     */
-    public int getNumDislikes()
+    public int getDislikes()
     {
       return 0; // TO DO
     }
+  
+    /**
+      
+    */ 
+    public void addDislike(){
+      // TO DO
+    } 
     
     /**
     returns the number of Sad Likes
@@ -98,6 +127,13 @@ public class FoodReview
     public int getNumSadLikes(){
       return 0; // TO DO
     }
+  
+    /**
+      
+    */ 
+    public void addSadLike(){
+      // TO DO
+    } 
   
   
   
