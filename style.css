@@ -9,6 +9,9 @@ body{
   padding: 10px;
   margin: 0px;
 }
+div#logo{
+  text-align:center;
+}
 h1{
   text-align:center;
   font-family: Verdana, Geneva, sans-serif;
